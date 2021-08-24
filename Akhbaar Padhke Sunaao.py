@@ -8,7 +8,7 @@ def speak(str):
     speak.Speak(str)
 
 if __name__ == '__main__':
-    news = requests.get("https://newsapi.org/v2/everything?sources=the-times-of-india&language=en&apiKey=661cdc6a59aa40d680cb5deb0410713f")
+    news = requests.get("https://newsapi.org/v2/everything?sources=the-times-of-india&language=en&apiKey=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
     news_call = news.text
     jso = json.loads(news_call)
     art = jso['articles']
