@@ -12,10 +12,11 @@ if __name__ == '__main__':
     news_call = news.text
     jso = json.loads(news_call)
     art = jso['articles']
-
-    for head_lines in art:
-
-        print(head_lines['title'])
+    for index,head_lines in enumerate(art):
+        print(index,head_lines['title'])
         speak(head_lines['title'])
-        speak("Next headline")
+        if index != 19:
+            print("Next headline")
+            speak("Next headline")
+    print("Thanks for coming")
     speak("Thanks for coming")
