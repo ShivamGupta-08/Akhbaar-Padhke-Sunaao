@@ -18,5 +18,6 @@ if __name__ == '__main__':
         if index != 19:
             print("Next headline")
             speak("Next headline")
+            break
     print("Thanks for coming")
     speak("Thanks for coming")
